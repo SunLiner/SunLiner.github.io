@@ -238,15 +238,150 @@
 
     
     
+
+    
       
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/01/17/Hello,React Native/" itemprop="url">
+                  Hello,React Native
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-01-17T01:10:44+08:00" content="2016-01-17">
+              2016-01-17
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/React-native/" itemprop="url" rel="index">
+                    <span itemprop="name">React native</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/01/17/Hello,React Native/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/17/Hello,React Native/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        
-        
-        
       
 
       
-    
+        
+          
+            <h3 id="前言">前言</h3><ul>
+<li>上一节,我们讲了React native以及相关配套软件的安装.</li>
+<li>如果还有任何疑问,可以查看 <a href="http://coderalin.com/2016/01/17/React%20Native的安装/">React Native的安装</a>, 或者在文章下面给我留言.</li>
+<li>请多关注我的<a href="http://coderalin.com">个人网站</a></li>
+</ul>
+<h3 id="Action">Action</h3><h4 id="1-创建项目">1.创建项目</h4><pre><code>搭建好环境之后,我们就可以使用react-<span class="keyword">native</span>命令来创建我们的第一个项目Hello了
+</code></pre><ul>
+<li><p>在终端输入命令行</p>
+<blockquote>
+<p>react-native init Hello</p>
+</blockquote>
+<pre><code>此处有个注意点:命令是react-<span class="keyword">native</span>,而不是react <span class="keyword">native</span>.没错,我第一次的时候就犯过这个错
+</code></pre></li>
+</ul>
+<ul>
+<li>第一次初始化的时候可能会比较慢,因为会去npm下载一些react native的相关的包</li>
+<li>如果一直卡在Installing react-native package from npm…这儿,可以将镜像改成淘宝的</li>
+<li>注意:两个命令逐一执行,缺一不可</li>
+</ul>
+<blockquote>
+<p>npm config set registry <a href="https://registry.npm.taobao.org" target="_blank" rel="external">https://registry.npm.taobao.org</a></p>
+<p>npm config set disturl <a href="https://npm.taobao.org/dist" target="_blank" rel="external">https://npm.taobao.org/dist</a></p>
+</blockquote>
+<h4 id="2-打开Hello项目">2.打开Hello项目</h4><ul>
+<li>在上一步创建项目成功之后,在最下方可以看到<code>Open /Users/xxxx/Hello/ios/Hello/Hello.xcodeproj in Xcode</code></li>
+<li>找到上面的路径,双击<code>Hello.xcodeproj</code>打开</li>
+<li>CMD+R运行即可.此时,终端会自动运行,不用管,也不要关闭.不出意外,你可以看到下面的画面</li>
+</ul>
+<p><img src="http://7xq6at.com1.z0.glb.clouddn.com/Snip20160117_4.png" alt="cmd-markdown-logo"></p>
+<ul>
+<li>如果很不幸,你看到的不是上面那样的.需要在你的终端输入<code>ifconfig</code> 查看自己本机的IP地址</li>
+<li>然后在AppDelegate.m文件中,将localhost改成你的IP地址即可.</li>
+</ul>
+<h4 id="3-修改index-ios-js文件">3.修改<code>index.ios.js</code>文件</h4><pre><code>- 使用Sublime Text打开`index<span class="class">.ios</span><span class="class">.js</span>`文件, 随意改一下fontSize或者<span class="attribute">margin</span>之类的,然后选中你的模拟器,
+CMD + R即可直接刷新.这就说明,我们修改JavaScript文件生效了.
+</code></pre>
+          
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
 
     
       
@@ -343,14 +478,23 @@
 </span>-<span class="ruby"> <span class="constant">Node</span>.js4.<span class="number">0</span>或者更高版本
 </span>-<span class="ruby"> <span class="constant">Homebrew</span>
 </span>-<span class="ruby"> 使用<span class="constant">NVM</span>管理<span class="constant">Node</span>.js版本</span>
-</code></pre><h3 id="1-安装Node-js">1.安装Node.js</h3><pre><code><span class="bullet">- </span>点击(或者输入)链接 [<span class="link_label">https://nodejs.org</span>](<span class="link_url">https://nodejs.org</span>)
-<span class="bullet">- </span>下载最新版的Node.js,傻瓜式的next-next-finish即可
-</code></pre><h3 id="2-安装Homebrew">2.安装Homebrew</h3><pre><code>简单介绍一下,Homebrew简称brew，是<span class="keyword">Mac</span> OSX上的软件包管理工具，
+</code></pre><h3 id="1-安装Node-js">1.安装Node.js</h3><ul>
+<li>点击 <a href="https://nodejs.org" target="_blank" rel="external">nodejs官网</a></li>
+<li>下载最新版的Node.js,傻瓜式的next-next-finish即可</li>
+</ul>
+<h3 id="2-安装Homebrew">2.安装Homebrew</h3><pre><code>简单介绍一下,Homebrew简称brew，是<span class="keyword">Mac</span> OSX上的软件包管理工具，
 能在<span class="keyword">Mac</span>中方便的安装软件或者卸载软件，可以说Homebrew就是<span class="keyword">mac</span>下的apt-get、yum神器.
-</code></pre><h4 id="2-1-Homebrew的安装">2.1.Homebrew的安装</h4><pre><code><span class="bullet">- </span>非常简单，打开终端,复制、粘贴以下命令，回车即可(官方安装方法）:
-</code></pre><blockquote>
+</code></pre><h4 id="2-1-Homebrew的安装">2.1.Homebrew的安装</h4><ul>
+<li>非常简单，打开终端,复制、粘贴以下命令，回车即可(官方安装方法）:</li>
+<li>中间会让你键入return进行确定按钮,按一下回车即可</li>
+<li>随后就是漫长的等待</li>
+</ul>
+<blockquote>
 <p>ruby -e “$(curl -fsSL <a href="https://raw.githubusercontent.com/Homebrew/install/master/install)”" target="_blank" rel="external">https://raw.githubusercontent.com/Homebrew/install/master/install)”</a></p>
 </blockquote>
+<ul>
+<li>最后附一张安装完成的图片<br><img src="http://7xq6at.com1.z0.glb.clouddn.com/Snip20160116_1.png" alt="cmd-markdown-logo"></li>
+</ul>
 <h4 id="2-2-安装Watchman">2.2.安装Watchman</h4><pre><code>-<span class="ruby"> <span class="constant">Watchman</span> 是 facebook 的一个开源项目，它开源用来监视文件并且记录文件的改动情况，
 </span>当文件变更它可以触发一些操作,例如执行一些命令等等。
 </code></pre><blockquote>
@@ -374,6 +518,9 @@
 </code></pre><blockquote>
 <p>git clone <a href="https://github.com/creationix/nvm.git" target="_blank" rel="external">https://github.com/creationix/nvm.git</a><br>cd nvm<br>source nvm.sh</p>
 </blockquote>
+<ul>
+<li>附上一张安装完成以后的图,上面有一些常用的命令,可以尝试一下<br><img src="http://7xq6at.com1.z0.glb.clouddn.com/Snip20160116_4.png" alt="cmd-markdown-logo"></li>
+</ul>
 
           
         
@@ -551,7 +698,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

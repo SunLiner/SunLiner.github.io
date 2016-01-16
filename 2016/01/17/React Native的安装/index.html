@@ -65,7 +65,9 @@ Action环境搭建(主要介绍Mac OS">
 <meta property="og:site_name" content="Alin的个人博客">
 <meta property="og:description" content="前言Facebook正式开源了React Native，目前iOS版，Android版基本都已经趋于稳定。具体关于React Native的解释,请移步至百度或者Google.😄我说说我为什么接触React Native…原因很简单,可以不再忍受新版本的漫长的审核期,可以从服务器动态更新JavaScript代码来实现应用的更新.想想,多么的纯洁啊…哈哈
 Action环境搭建(主要介绍Mac OS">
-<meta property="og:updated_time" content="2016-01-16T17:03:48.000Z">
+<meta property="og:image" content="http://7xq6at.com1.z0.glb.clouddn.com/Snip20160116_1.png">
+<meta property="og:image" content="http://7xq6at.com1.z0.glb.clouddn.com/Snip20160116_4.png">
+<meta property="og:updated_time" content="2016-01-16T17:37:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React Native的安装">
 <meta name="twitter:description" content="前言Facebook正式开源了React Native，目前iOS版，Android版基本都已经趋于稳定。具体关于React Native的解释,请移步至百度或者Google.😄我说说我为什么接触React Native…原因很简单,可以不再忍受新版本的漫长的审核期,可以从服务器动态更新JavaScript代码来实现应用的更新.想想,多么的纯洁啊…哈哈
@@ -325,14 +327,23 @@ Action环境搭建(主要介绍Mac OS">
 </span>-<span class="ruby"> <span class="constant">Node</span>.js4.<span class="number">0</span>或者更高版本
 </span>-<span class="ruby"> <span class="constant">Homebrew</span>
 </span>-<span class="ruby"> 使用<span class="constant">NVM</span>管理<span class="constant">Node</span>.js版本</span>
-</code></pre><h3 id="1-安装Node-js">1.安装Node.js</h3><pre><code><span class="bullet">- </span>点击(或者输入)链接 [<span class="link_label">https://nodejs.org</span>](<span class="link_url">https://nodejs.org</span>)
-<span class="bullet">- </span>下载最新版的Node.js,傻瓜式的next-next-finish即可
-</code></pre><h3 id="2-安装Homebrew">2.安装Homebrew</h3><pre><code>简单介绍一下,Homebrew简称brew，是<span class="keyword">Mac</span> OSX上的软件包管理工具，
+</code></pre><h3 id="1-安装Node-js">1.安装Node.js</h3><ul>
+<li>点击 <a href="https://nodejs.org" target="_blank" rel="external">nodejs官网</a></li>
+<li>下载最新版的Node.js,傻瓜式的next-next-finish即可</li>
+</ul>
+<h3 id="2-安装Homebrew">2.安装Homebrew</h3><pre><code>简单介绍一下,Homebrew简称brew，是<span class="keyword">Mac</span> OSX上的软件包管理工具，
 能在<span class="keyword">Mac</span>中方便的安装软件或者卸载软件，可以说Homebrew就是<span class="keyword">mac</span>下的apt-get、yum神器.
-</code></pre><h4 id="2-1-Homebrew的安装">2.1.Homebrew的安装</h4><pre><code><span class="bullet">- </span>非常简单，打开终端,复制、粘贴以下命令，回车即可(官方安装方法）:
-</code></pre><blockquote>
+</code></pre><h4 id="2-1-Homebrew的安装">2.1.Homebrew的安装</h4><ul>
+<li>非常简单，打开终端,复制、粘贴以下命令，回车即可(官方安装方法）:</li>
+<li>中间会让你键入return进行确定按钮,按一下回车即可</li>
+<li>随后就是漫长的等待</li>
+</ul>
+<blockquote>
 <p>ruby -e “$(curl -fsSL <a href="https://raw.githubusercontent.com/Homebrew/install/master/install)”" target="_blank" rel="external">https://raw.githubusercontent.com/Homebrew/install/master/install)”</a></p>
 </blockquote>
+<ul>
+<li>最后附一张安装完成的图片<br><img src="http://7xq6at.com1.z0.glb.clouddn.com/Snip20160116_1.png" alt="cmd-markdown-logo"></li>
+</ul>
 <h4 id="2-2-安装Watchman">2.2.安装Watchman</h4><pre><code>-<span class="ruby"> <span class="constant">Watchman</span> 是 facebook 的一个开源项目，它开源用来监视文件并且记录文件的改动情况，
 </span>当文件变更它可以触发一些操作,例如执行一些命令等等。
 </code></pre><blockquote>
@@ -356,6 +367,9 @@ Action环境搭建(主要介绍Mac OS">
 </code></pre><blockquote>
 <p>git clone <a href="https://github.com/creationix/nvm.git" target="_blank" rel="external">https://github.com/creationix/nvm.git</a><br>cd nvm<br>source nvm.sh</p>
 </blockquote>
+<ul>
+<li>附上一张安装完成以后的图,上面有一些常用的命令,可以尝试一下<br><img src="http://7xq6at.com1.z0.glb.clouddn.com/Snip20160116_4.png" alt="cmd-markdown-logo"></li>
+</ul>
 
       
     </div>
@@ -380,6 +394,10 @@ Action环境搭建(主要介绍Mac OS">
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/01/17/Hello,React Native/" rel="prev" title="Hello,React Native">
+                Hello,React Native <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -470,7 +488,7 @@ Action环境搭建(主要介绍Mac OS">
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
