@@ -1,5 +1,11 @@
 <!doctype html>
-<html class="theme-next   use-motion ">
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -25,9 +31,14 @@
 
 
 
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -39,7 +50,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
 
 
 
@@ -59,36 +70,51 @@
 
 
 <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Mist',
-    sidebar: 'hide',
-    motion: true
+    sidebar: {"position":"right","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
   };
 </script>
 
   <title> Alin的个人博客 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
   
 
 
 
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?ce963ebf11b9f4a3abddc486148ce156";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
-  <div class="container one-column 
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right 
    page-home 
-">
+ ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -117,7 +143,7 @@
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu menu-left">
       
         
         <li class="menu-item menu-item-home">
@@ -125,7 +151,7 @@
             
               <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
             
-            首頁
+            首页
           </a>
         </li>
       
@@ -135,27 +161,7 @@
             
               <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
             
-            分類
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
-            
-            標籤
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
-            
-            歸檔
+            分类
           </a>
         </li>
       
@@ -165,26 +171,56 @@
             
               <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
             
-            關於
+            关于
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-commonweal">
-          <a href="/404.html" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
             
-            公益404
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
           </a>
         </li>
       
 
+      
       
       
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'MGAAR6C9s14CAPkAowjL','2.0.0');
+</script>
+
+
+
+    </div>
   
 </nav>
 
@@ -193,8 +229,9 @@
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
-          
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
   <section id="posts" class="posts-expand">
 
     
@@ -233,6 +270,151 @@
             
               
                 
+                <a class="post-title-link" href="/2016/01/17/React Native的安装/" itemprop="url">
+                  React Native的安装
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-01-17T00:17:49+08:00" content="2016-01-17">
+              2016-01-17
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/React-native/" itemprop="url" rel="index">
+                    <span itemprop="name">React native</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/01/17/React Native的安装/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/17/React Native的安装/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="前言">前言</h2><p>Facebook正式开源了React Native，目前iOS版，Android版基本都已经趋于稳定。具体关于React Native的解释,请移步至百度或者Google.<br>😄我说说我为什么接触React Native…<br>原因很简单,可以不再忍受新版本的漫长的审核期,可以从服务器动态更新JavaScript代码来实现应用的更新.想想,多么的纯洁啊…哈哈</p>
+<h2 id="Action">Action</h2><h3 id="环境搭建(主要介绍Mac_OS_X操作系统)">环境搭建(主要介绍Mac OS X操作系统)</h3><pre><code>-<span class="ruby"> <span class="constant">Xcode</span>,最好是<span class="number">6.4</span>以上的(直接在<span class="constant">AppStore</span>里面下载即可)
+</span>-<span class="ruby"> <span class="constant">Node</span>.js4.<span class="number">0</span>或者更高版本
+</span>-<span class="ruby"> <span class="constant">Homebrew</span>
+</span>-<span class="ruby"> 使用<span class="constant">NVM</span>管理<span class="constant">Node</span>.js版本</span>
+</code></pre><h3 id="1-安装Node-js">1.安装Node.js</h3><pre><code><span class="bullet">- </span>点击(或者输入)链接 [<span class="link_label">https://nodejs.org</span>](<span class="link_url">https://nodejs.org</span>)
+<span class="bullet">- </span>下载最新版的Node.js,傻瓜式的next-next-finish即可
+</code></pre><h3 id="2-安装Homebrew">2.安装Homebrew</h3><pre><code>简单介绍一下,Homebrew简称brew，是<span class="keyword">Mac</span> OSX上的软件包管理工具，
+能在<span class="keyword">Mac</span>中方便的安装软件或者卸载软件，可以说Homebrew就是<span class="keyword">mac</span>下的apt-get、yum神器.
+</code></pre><h4 id="2-1-Homebrew的安装">2.1.Homebrew的安装</h4><pre><code><span class="bullet">- </span>非常简单，打开终端,复制、粘贴以下命令，回车即可(官方安装方法）:
+</code></pre><blockquote>
+<p>ruby -e “$(curl -fsSL <a href="https://raw.githubusercontent.com/Homebrew/install/master/install)”" target="_blank" rel="external">https://raw.githubusercontent.com/Homebrew/install/master/install)”</a></p>
+</blockquote>
+<h4 id="2-2-安装Watchman">2.2.安装Watchman</h4><pre><code>-<span class="ruby"> <span class="constant">Watchman</span> 是 facebook 的一个开源项目，它开源用来监视文件并且记录文件的改动情况，
+</span>当文件变更它可以触发一些操作,例如执行一些命令等等。
+</code></pre><blockquote>
+<p>brew install watchman</p>
+</blockquote>
+<h4 id="2-3_安装flow">2.3 安装flow</h4><pre><code><span class="bullet">- </span>flow用于类型检查
+</code></pre><blockquote>
+<p>brew install flow</p>
+</blockquote>
+<h3 id="3-安装React_Native">3.安装React Native</h3><blockquote>
+<p>npm install -g react-native-cli</p>
+</blockquote>
+<pre><code><span class="bullet">- </span>如果在安装过程中需要管理员权限,添加sudo,然后输入管理员密码即可
+</code></pre><blockquote>
+<p>sudo npm install -g react-native-cli</p>
+</blockquote>
+<pre><code>-<span class="ruby"> 如果安装时间比较长的话,可以使用淘宝镜像.具体的可以自行百度,
+</span>我安装的时候没有使用VPN,自身的网络也不是光纤,几分钟就OK了
+</code></pre><h3 id="4-使用NVM管理Node-js版本">4.使用NVM管理Node.js版本</h3><pre><code>-<span class="ruby"> 如果需要经常切换<span class="constant">Node</span>.js版本,建议使用<span class="constant">NVM</span>管理<span class="constant">Node</span>.js版本.
+</span>-<span class="ruby"> 直接使用git clone命令,随后执行下面两个命令即可临时使用nvm命令</span>
+</code></pre><blockquote>
+<p>git clone <a href="https://github.com/creationix/nvm.git" target="_blank" rel="external">https://github.com/creationix/nvm.git</a><br>cd nvm<br>source nvm.sh</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/01/16/博客重新开张/" itemprop="url">
                   博客重新开张,扯点什么吧
                 </a>
@@ -243,49 +425,72 @@
 
         <div class="post-meta">
           <span class="post-time">
-            發表於
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-01-16T21:37:08+08:00" content="2016-01-16">
               2016-01-16
             </time>
           </span>
-          <span class="post-time">
-            | 修改于
-            <time itemprop="dateCreated" datetime="2016-01-16T22:00:07+08:00" content="2016-01-16">
-              2016-01-16
-            </time>
-          </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">随笔</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/01/16/博客重新开张/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/16/博客重新开张/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
           
 
+          
+          
         </div>
       </header>
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
         
-          <span itemprop="articleBody">
-            
-              <h2 id="随便说点什么呢">随便说点什么呢</h2><pre><code>我之前在csdn和简书上都有写点东西.都是技术方面的.主要专注于 i<span class="variable">OS</span>.多数都输<span class="variable">OC</span>和<span class="variable">SWIFT</span>的文章.由于自己笔墨有限,技术也有限,再加上前一段时间加班比较严重,就中途放弃了博客.
+          
+            <h2 id="随便说点什么呢">随便说点什么呢</h2><pre><code>我之前在csdn和简书上都有写点东西.都是技术方面的.主要专注于 i<span class="variable">OS</span>.多数都输<span class="variable">OC</span>和<span class="variable">SWIFT</span>的文章.由于自己笔墨有限,技术也有限,再加上前一段时间加班比较严重,就中途放弃了博客.
 那为什么现在又新开始呢?😄,搞笑了...之前也没人看我的文章.完全是出于好玩了.买了个域名,总不能空在那,没事写点文章扯扯淡,以后积累多了也可以装个<span class="number">13</span>什么的.哈哈...
 </code></pre><h2 id="给自己的一点寄语吧">给自己的一点寄语吧</h2><pre><code>我是个屌丝程序员,就上段屌丝代码吧
 </code></pre><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;<span class="number">365</span>; i++) &#123;</span><br><span class="line">   <span class="built_in">CGFloat</span> today = <span class="number">1.0</span>; <span class="comment">// 今天的power</span></span><br><span class="line">   <span class="built_in">CGFloat</span> improve = <span class="number">0.01</span>; <span class="comment">// 每天进步0.01</span></span><br><span class="line">   <span class="built_in">CGFloat</span> everyDay = pow((today + improve), i); <span class="comment">// 每天的power</span></span><br><span class="line">   <span class="built_in">NSLog</span>(<span class="string">@"%f"</span>, everyDay);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 <pre><code>每天进步<span class="number">0.01</span>,那么<span class="number">365</span>天之后, 就是现在的<span class="number">37.409341</span>倍<span class="attribute">...</span>这比存银行划算多了<span class="attribute">...</span>
 一起进步吧<span class="attribute">...</span>新的博客,新的开始
 </code></pre>
-            
-          </span>
+          
         
       
     </div>
@@ -310,17 +515,15 @@
   
 
 
+          </div>
+          
+
+
+          
+
         </div>
-
         
-
-
-        
-
-      </div>
-
-      
-        
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -339,29 +542,31 @@
 
       <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="/images/default_avatar.jpg" alt="Say_Alin" itemprop="image"/>
+          <img class="site-author-image" itemprop="image"
+               src="http://7xq6at.com1.z0.glb.clouddn.com/IMG_5609.jpg"
+               alt="Say_Alin" />
           <p class="site-author-name" itemprop="name">Say_Alin</p>
+          <p class="site-description motion-element" itemprop="description">记录一些工作中，学习中的点滴</p>
         </div>
-        <p class="site-description motion-element" itemprop="description">记录一些工作中，学习中的点滴</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
-              <span class="site-state-item-name">文章</span>
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">0</span>
-              <span class="site-state-item-name">分類</span>
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">0</span>
-              <span class="site-state-item-name">標籤</span>
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">标签</span>
               </a>
           </div>
 
@@ -370,6 +575,24 @@
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/SunLiner" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> github
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/5589163526" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> weibo
+                  
+                </a>
+              </span>
+            
           
         </div>
 
@@ -388,14 +611,15 @@
   </aside>
 
 
-      
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
+  &copy;  2014 - 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
     <i class="icon-next-heart fa fa-heart"></i>
@@ -404,11 +628,11 @@
 </div>
 
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 強力驅動
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
-  主題 -
+  主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Mist
   </a>
@@ -422,44 +646,104 @@
     <div class="back-to-top"></div>
   </div>
 
+  
+
+
+  
+
+
+
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
-  
-  
-
-  
-    
-    
-
-  
-
-
-  
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
-
-
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
   
 
-  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
 
   
   
 
   
+
   
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"coderalin"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+
+  
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/MathJax.js"></script>
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/config/TeX-AMS-MML_HTMLorMML.js"></script>
+  
+
+
+  
+  
+
 
 </body>
 </html>
