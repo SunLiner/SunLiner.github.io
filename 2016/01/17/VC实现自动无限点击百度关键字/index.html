@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="hacker," />
 
 
 
@@ -57,15 +57,36 @@
 
 
 
-<meta name="description" content="记录一些工作中，学习中的点滴">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Alin的个人博客">
-<meta property="og:url" content="http://coderalin.com/index.html">
+<meta name="description" content="前言
+请多关注我的个人网站
+
+    近一段时间,狼厂关于卖吧的事搞得沸沸扬扬的.当然,我们今天的主题谈不是谈论它应不应该卖.勿喷.
+    互联网营销是现在的主要营销方式，用此渠道推广和营销的方式前提是需要有自己的网站。通过对搜索
+引擎制定关键字进行推广。今天我们就搞个小程序,实现自动无限点击广告的功能(每点击一次,狼厂就会收取
+广告商的费用,当然你最好是使用VPN工具,动态更换IP,哈哈,纯属">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VC实现自动无限点击百度关键字">
+<meta property="og:url" content="http://coderalin.com/2016/01/17/VC实现自动无限点击百度关键字/index.html">
 <meta property="og:site_name" content="Alin的个人博客">
-<meta property="og:description" content="记录一些工作中，学习中的点滴">
+<meta property="og:description" content="前言
+请多关注我的个人网站
+
+    近一段时间,狼厂关于卖吧的事搞得沸沸扬扬的.当然,我们今天的主题谈不是谈论它应不应该卖.勿喷.
+    互联网营销是现在的主要营销方式，用此渠道推广和营销的方式前提是需要有自己的网站。通过对搜索
+引擎制定关键字进行推广。今天我们就搞个小程序,实现自动无限点击广告的功能(每点击一次,狼厂就会收取
+广告商的费用,当然你最好是使用VPN工具,动态更换IP,哈哈,纯属">
+<meta property="og:image" content="http://7xq6at.com1.z0.glb.clouddn.com/VC%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%8A%A8%E6%97%A0%E9%99%90%E7%82%B9%E5%87%BB%E7%99%BE%E5%BA%A6%E5%85%B3%E9%94%AE%E5%AD%97.gif">
+<meta property="og:image" content="http://7xq6at.com1.z0.glb.clouddn.com/Snip20160117_2.png">
+<meta property="og:updated_time" content="2016-01-17T15:44:03.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Alin的个人博客">
-<meta name="twitter:description" content="记录一些工作中，学习中的点滴">
+<meta name="twitter:title" content="VC实现自动无限点击百度关键字">
+<meta name="twitter:description" content="前言
+请多关注我的个人网站
+
+    近一段时间,狼厂关于卖吧的事搞得沸沸扬扬的.当然,我们今天的主题谈不是谈论它应不应该卖.勿喷.
+    互联网营销是现在的主要营销方式，用此渠道推广和营销的方式前提是需要有自己的网站。通过对搜索
+引擎制定关键字进行推广。今天我们就搞个小程序,实现自动无限点击广告的功能(每点击一次,狼厂就会收取
+广告商的费用,当然你最好是使用VPN工具,动态更换IP,哈哈,纯属">
 
 
 
@@ -83,7 +104,7 @@
   };
 </script>
 
-  <title> Alin的个人博客 </title>
+  <title> VC实现自动无限点击百度关键字 | Alin的个人博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -112,9 +133,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-right 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -232,15 +251,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
 
+  <div id="posts" class="posts-expand">
     
-
-    
-    
-
-    
-      
 
   
   
@@ -260,10 +273,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/01/17/VC实现自动无限点击百度关键字/" itemprop="url">
-                  VC实现自动无限点击百度关键字
-                </a>
+                VC实现自动无限点击百度关键字
               
             
           </h1>
@@ -327,9 +337,7 @@
       
 
       
-        
-          
-            <h2 id="前言">前言</h2><ul>
+        <h2 id="前言">前言</h2><ul>
 <li>请多关注我的<a href="http://coderalin.com">个人网站</a></li>
 </ul>
 <pre><code>    近一段时间,狼厂关于卖吧的事搞得沸沸扬扬的.当然,我们今天的主题谈不是谈论它应不应该卖.勿喷.
@@ -405,445 +413,64 @@ DWORD dwExtraInfo <span class="comment">// 定义与击键相关的附加的32�
 </code></pre><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> close()</span><br><span class="line">&#123;</span><br><span class="line">	system(<span class="string">"taskkill /f /im iexplore.exe"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="5-实现无限点击">5.实现无限点击</h3><pre><code>最后,就比较easy了,搞个死循环即可
 </code></pre><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> main()</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">while</span> (<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		openBrowser(<span class="string">"http://www.baidu.com"</span>);</span><br><span class="line">		Sleep(<span class="number">2000</span>);</span><br><span class="line">		search();</span><br><span class="line">		Sleep(<span class="number">2000</span>);</span><br><span class="line">		click();</span><br><span class="line">		Sleep(<span class="number">2000</span>);</span><br><span class="line">		close();</span><br><span class="line">	&#125;</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
-        
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/01/17/Hello,React Native/" itemprop="url">
-                  Hello,React Native
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-17T01:10:44+08:00" content="2016-01-17">
-              2016-01-17
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/React-native/" itemprop="url" rel="index">
-                    <span itemprop="name">React native</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/01/17/Hello,React Native/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/17/Hello,React Native/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
+            <a href="/tags/hacker/" rel="tag">#hacker</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h3 id="前言">前言</h3><ul>
-<li>上一节,我们讲了React native以及相关配套软件的安装.</li>
-<li>如果还有任何疑问,可以查看 <a href="http://coderalin.com/2016/01/17/React%20Native的安装/">React Native的安装</a>, 或者在文章下面给我留言.</li>
-<li>请多关注我的<a href="http://coderalin.com">个人网站</a></li>
-</ul>
-<h3 id="Action">Action</h3><h4 id="1-创建项目">1.创建项目</h4><pre><code>搭建好环境之后,我们就可以使用react-<span class="keyword">native</span>命令来创建我们的第一个项目Hello了
-</code></pre><ul>
-<li><p>在终端输入命令行</p>
-<blockquote>
-<p>react-native init Hello</p>
-</blockquote>
-<pre><code>此处有个注意点:命令是react-<span class="keyword">native</span>,而不是react <span class="keyword">native</span>.没错,我第一次的时候就犯过这个错
-</code></pre></li>
-</ul>
-<ul>
-<li>第一次初始化的时候可能会比较慢,因为会去npm下载一些react native的相关的包</li>
-<li>如果一直卡在Installing react-native package from npm…这儿,可以将镜像改成淘宝的</li>
-<li>注意:两个命令逐一执行,缺一不可</li>
-</ul>
-<blockquote>
-<p>npm config set registry <a href="https://registry.npm.taobao.org" target="_blank" rel="external">https://registry.npm.taobao.org</a></p>
-<p>npm config set disturl <a href="https://npm.taobao.org/dist" target="_blank" rel="external">https://npm.taobao.org/dist</a></p>
-</blockquote>
-<h4 id="2-打开Hello项目">2.打开Hello项目</h4><ul>
-<li>在上一步创建项目成功之后,在最下方可以看到<code>Open /Users/xxxx/Hello/ios/Hello/Hello.xcodeproj in Xcode</code></li>
-<li>找到上面的路径,双击<code>Hello.xcodeproj</code>打开</li>
-<li>CMD+R运行即可.此时,终端会自动运行,不用管,也不要关闭.不出意外,你可以看到下面的画面</li>
-</ul>
-<p><img src="http://7xq6at.com1.z0.glb.clouddn.com/Snip20160117_4.png" alt="cmd-markdown-logo"></p>
-<ul>
-<li>如果很不幸,你看到的不是上面那样的.需要在你的终端输入<code>ifconfig</code> 查看自己本机的IP地址</li>
-<li>然后在AppDelegate.m文件中,将localhost改成你的IP地址即可.</li>
-</ul>
-<h4 id="3-修改index-ios-js文件">3.修改<code>index.ios.js</code>文件</h4><pre><code>- 使用Sublime Text打开`index<span class="class">.ios</span><span class="class">.js</span>`文件, 随意改一下fontSize或者<span class="attribute">margin</span>之类的,然后选中你的模拟器,
-CMD + R即可直接刷新.这就说明,我们修改JavaScript文件生效了.
-</code></pre>
-          
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/01/17/Hello,React Native/" rel="next" title="Hello,React Native">
+                <i class="fa fa-chevron-left"></i> Hello,React Native
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/01/17/React Native的安装/" itemprop="url">
-                  React Native的安装
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-17T00:17:49+08:00" content="2016-01-17">
-              2016-01-17
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/React-native/" itemprop="url" rel="index">
-                    <span itemprop="name">React native</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/01/17/React Native的安装/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/17/React Native的安装/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="前言">前言</h2><p>Facebook正式开源了React Native，目前iOS版，Android版基本都已经趋于稳定。具体关于React Native的解释,请移步至百度或者Google.<br>😄我说说我为什么接触React Native…<br>原因很简单,可以不再忍受新版本的漫长的审核期,可以从服务器动态更新JavaScript代码来实现应用的更新.想想,多么的纯洁啊…哈哈</p>
-<h2 id="Action">Action</h2><h3 id="环境搭建(主要介绍Mac_OS_X操作系统)">环境搭建(主要介绍Mac OS X操作系统)</h3><pre><code>-<span class="ruby"> <span class="constant">Xcode</span>,最好是<span class="number">6.4</span>以上的(直接在<span class="constant">AppStore</span>里面下载即可)
-</span>-<span class="ruby"> <span class="constant">Node</span>.js4.<span class="number">0</span>或者更高版本
-</span>-<span class="ruby"> <span class="constant">Homebrew</span>
-</span>-<span class="ruby"> 使用<span class="constant">NVM</span>管理<span class="constant">Node</span>.js版本</span>
-</code></pre><h3 id="1-安装Node-js">1.安装Node.js</h3><ul>
-<li>点击 <a href="https://nodejs.org" target="_blank" rel="external">nodejs官网</a></li>
-<li>下载最新版的Node.js,傻瓜式的next-next-finish即可</li>
-</ul>
-<h3 id="2-安装Homebrew">2.安装Homebrew</h3><pre><code>简单介绍一下,Homebrew简称brew，是<span class="keyword">Mac</span> OSX上的软件包管理工具，
-能在<span class="keyword">Mac</span>中方便的安装软件或者卸载软件，可以说Homebrew就是<span class="keyword">mac</span>下的apt-get、yum神器.
-</code></pre><h4 id="2-1-Homebrew的安装">2.1.Homebrew的安装</h4><ul>
-<li>非常简单，打开终端,复制、粘贴以下命令，回车即可(官方安装方法）:</li>
-<li>中间会让你键入return进行确定按钮,按一下回车即可</li>
-<li>随后就是漫长的等待</li>
-</ul>
-<blockquote>
-<p>ruby -e “$(curl -fsSL <a href="https://raw.githubusercontent.com/Homebrew/install/master/install)”" target="_blank" rel="external">https://raw.githubusercontent.com/Homebrew/install/master/install)”</a></p>
-</blockquote>
-<ul>
-<li>最后附一张安装完成的图片<br><img src="http://7xq6at.com1.z0.glb.clouddn.com/Snip20160116_1.png" alt="cmd-markdown-logo"></li>
-</ul>
-<h4 id="2-2-安装Watchman">2.2.安装Watchman</h4><pre><code>-<span class="ruby"> <span class="constant">Watchman</span> 是 facebook 的一个开源项目，它开源用来监视文件并且记录文件的改动情况，
-</span>当文件变更它可以触发一些操作,例如执行一些命令等等。
-</code></pre><blockquote>
-<p>brew install watchman</p>
-</blockquote>
-<h4 id="2-3_安装flow">2.3 安装flow</h4><pre><code><span class="bullet">- </span>flow用于类型检查
-</code></pre><blockquote>
-<p>brew install flow</p>
-</blockquote>
-<h3 id="3-安装React_Native">3.安装React Native</h3><blockquote>
-<p>npm install -g react-native-cli</p>
-</blockquote>
-<pre><code><span class="bullet">- </span>如果在安装过程中需要管理员权限,添加sudo,然后输入管理员密码即可
-</code></pre><blockquote>
-<p>sudo npm install -g react-native-cli</p>
-</blockquote>
-<pre><code>-<span class="ruby"> 如果安装时间比较长的话,可以使用淘宝镜像.具体的可以自行百度,
-</span>我安装的时候没有使用VPN,自身的网络也不是光纤,几分钟就OK了
-</code></pre><h3 id="4-使用NVM管理Node-js版本">4.使用NVM管理Node.js版本</h3><pre><code>-<span class="ruby"> 如果需要经常切换<span class="constant">Node</span>.js版本,建议使用<span class="constant">NVM</span>管理<span class="constant">Node</span>.js版本.
-</span>-<span class="ruby"> 直接使用git clone命令,随后执行下面两个命令即可临时使用nvm命令</span>
-</code></pre><blockquote>
-<p>git clone <a href="https://github.com/creationix/nvm.git" target="_blank" rel="external">https://github.com/creationix/nvm.git</a><br>cd nvm<br>source nvm.sh</p>
-</blockquote>
-<ul>
-<li>附上一张安装完成以后的图,上面有一些常用的命令,可以尝试一下<br><img src="http://7xq6at.com1.z0.glb.clouddn.com/Snip20160116_4.png" alt="cmd-markdown-logo"></li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
+
+    <div class="post-spread">
       
+        <div class="ds-share flat" data-thread-key="2016/01/17/VC实现自动无限点击百度关键字/"
+     data-title="VC实现自动无限点击百度关键字"
+     data-content=""
+     data-url="http://coderalin.com/2016/01/17/VC实现自动无限点击百度关键字/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
 
-  
-  
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
 
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/01/16/博客重新开张/" itemprop="url">
-                  博客重新开张,扯点什么吧
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-16T21:37:08+08:00" content="2016-01-16">
-              2016-01-16
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/随笔/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/01/16/博客重新开张/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/16/博客重新开张/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="随便说点什么呢">随便说点什么呢</h2><pre><code>我之前在csdn和简书上都有写点东西.都是技术方面的.主要专注于 i<span class="variable">OS</span>.多数都输<span class="variable">OC</span>和<span class="variable">SWIFT</span>的文章.由于自己笔墨有限,技术也有限,再加上前一段时间加班比较严重,就中途放弃了博客.
-那为什么现在又新开始呢?😄,搞笑了...之前也没人看我的文章.完全是出于好玩了.买了个域名,总不能空在那,没事写点文章扯扯淡,以后积累多了也可以装个<span class="number">13</span>什么的.哈哈...
-</code></pre><h2 id="给自己的一点寄语吧">给自己的一点寄语吧</h2><pre><code>我是个屌丝程序员,就上段屌丝代码吧
-</code></pre><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;<span class="number">365</span>; i++) &#123;</span><br><span class="line">   <span class="built_in">CGFloat</span> today = <span class="number">1.0</span>; <span class="comment">// 今天的power</span></span><br><span class="line">   <span class="built_in">CGFloat</span> improve = <span class="number">0.01</span>; <span class="comment">// 每天进步0.01</span></span><br><span class="line">   <span class="built_in">CGFloat</span> everyDay = pow((today + improve), i); <span class="comment">// 每天的power</span></span><br><span class="line">   <span class="built_in">NSLog</span>(<span class="string">@"%f"</span>, everyDay);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-<pre><code>每天进步<span class="number">0.01</span>,那么<span class="number">365</span>天之后, 就是现在的<span class="number">37.409341</span>倍<span class="attribute">...</span>这比存银行划算多了<span class="attribute">...</span>
-一起进步吧<span class="attribute">...</span>新的博客,新的开始
-</code></pre>
-          
-        
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
       
     </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -851,6 +478,14 @@ CMD + R即可直接刷新.这就说明,我们修改JavaScript文件生效了.
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/01/17/VC实现自动无限点击百度关键字/"
+           data-title="VC实现自动无限点击百度关键字" data-url="http://coderalin.com/2016/01/17/VC实现自动无限点击百度关键字/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -870,8 +505,17 @@ CMD + R即可直接刷新.这就说明,我们修改JavaScript文件生效了.
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://7xq6at.com1.z0.glb.clouddn.com/IMG_5609.jpg"
@@ -936,6 +580,23 @@ CMD + R即可直接刷新.这就说明,我们修改JavaScript文件生效了.
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#知识储备"><span class="nav-number">2.</span> <span class="nav-text">知识储备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Action"><span class="nav-number">3.</span> <span class="nav-text">Action</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-打开浏览器,输入http://www-baidu-com"><span class="nav-number">3.1.</span> <span class="nav-text">1.打开浏览器,输入http://www.baidu.com</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-输入关键字,比如我们这儿输入”医院”"><span class="nav-number">3.2.</span> <span class="nav-text">2.输入关键字,比如我们这儿输入”医院”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-点击第一条关键字信息"><span class="nav-number">3.3.</span> <span class="nav-text">3.点击第一条关键字信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-关闭浏览器"><span class="nav-number">3.4.</span> <span class="nav-text">4.关闭浏览器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-实现无限点击"><span class="nav-number">3.5.</span> <span class="nav-text">5.实现无限点击</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
       
 
     </div>
@@ -1010,6 +671,167 @@ CMD + R即可直接刷新.这就说明,我们修改JavaScript文件生效了.
   
 
   
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
 
   
 
